@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .center {
+            text-align: center;
+            margin: top 500px;
+        }
+        </style>
+    <style>
+        .button4 {
+            background-color: transparent;
+            color: black;
+            border-width: 0px;
+            padding: 25px 100px;
+
+        }
+    </style>
+</head>
+<body>
+    <style>
+        img {
+            display: block;
+            margin: 0 auto;
+        }
+        </style>
+    <img border="0" src="D:\编程\图片\IMG_0154.webp" alt="W3School" width="500" height="1000">
+    <div id="main" class="">
+        <div class="center">
+            <button class="button button4" type="button" id="btn" onclick="open_video()" onclick="playVideo()">你被骗了</button>
+        </div>
+        
+        </div>
+        <div id="vido" class="">
+
+            <video id="myVideo"width="100%" height="100%" controls>
+        
+                 <source src="D:\编程\图片\192d9a98d782d9c74c96f09db9378d93.mp4" type="video/mp4">
+        
+            </video>
+        
+        </div>
+    
+                 <script>
+
+                    window.onload=function non(){
+                    
+                    document.getElementById("vido").style.cssText = "display:none;";
+                    
+                    }
+                    
+                    </script>
+                    <script>function open_video(){
+
+                        document.getElementById("vido").style.cssText = "display:block;";
+                        
+                        }</script>
+ <script>function playVideo() {
+    var video = document.getElementById("myVideo");
+     video.style.display = "block";
+     video.play();
+     }</script>
+</body>
+</html>
